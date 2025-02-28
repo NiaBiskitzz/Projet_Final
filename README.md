@@ -1,2 +1,4 @@
 # Projet_Final
- Nia, Antoine, Daphnée, Amélie, Grégoire, Charle
+ Nia, Antoine, Daphnee, Amélie, Grégoire, Charles
+Nous ferons un jeux aleatoire avec plusieurs mini jeux
+Voici
