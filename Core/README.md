@@ -1,4 +1,3 @@
-# Projet_Final
- Nia, Antoine, Daphnee, Amélie, Grégoire, Charles
-Nous ferons un jeux aleatoire avec plusieurs mini jeux
-Voici
+Team Core
+Nia, Antoine, Charles
+Nous ferons Le système aléatoire, le système de pointage et le système de Chargement
