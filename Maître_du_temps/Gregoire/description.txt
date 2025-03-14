@@ -1,2 +1,4 @@
 Cette partie de code sera pour limiter le temps en jeu/ entre chaque tour et aussi du chronomètrer le temps en jeu.
 Import Time déja inclu dans python
+Entré, début du timer au début d'un jeu
+Sortie, temps de départ - temps de fin pour avoir le temps totale de la duré d'un jeu.
