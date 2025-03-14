@@ -1,5 +1,5 @@
 #permet d'utiliser la classe Timer facilement   
-from timeit import default_timer as Timer
+import Timer
 timer = Timer()
  
 # Votre code se trouve ici
