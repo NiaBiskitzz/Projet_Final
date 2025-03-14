@@ -1,5 +1,4 @@
 """doit import time et datetime"""
-
 def_countdown (h, m, s):
 """ tout est en seconde"
 "h = heure *3600, m = minute *60, s = seconde
