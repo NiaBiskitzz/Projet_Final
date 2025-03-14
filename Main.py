@@ -13,6 +13,6 @@ import jeu_6
 #démarage du programe des jeux
 début_Jeu()
 #Séléction du jeu de façon aléatoire
-fonction_aléatoire = choix_de_jeu
+fonction_aléatoire = choix_de_jeu type(int)
 
 
