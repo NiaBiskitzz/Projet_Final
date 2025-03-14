@@ -1,8 +1,9 @@
+#écrit un max de commentaire
 import fonction_aléatoire
 import Banque
 import réponce_finale
 import début_Jeu
-import point
+import point #Afichage des point total
 import jeu_1
 import jeu_2
 import jeu_3
