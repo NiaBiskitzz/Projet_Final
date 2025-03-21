@@ -1,7 +1,6 @@
 import random
-import countdown
-while countdown > 0 :#**marche pas
-    continue
+import countdown# marche pas, il faut que le code roule pendant le countdown
+
 def trivia_game():
     questions = [
         {"question": "Quelle est la capitale de la France ?", "answer": "Paris"},
