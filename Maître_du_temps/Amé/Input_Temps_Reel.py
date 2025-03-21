@@ -31,4 +31,4 @@ def InputTempsReel():
             score2 = score2 + 1
             print(f"score du joueur 1: {score1}", f"score du joueur 2: {score2}", sep='\n')
     #Le retour est le score des deux joueurs
-    return f"score du joueur 1: {score1}", f"score du joueur 2: {score2}"
+    return score1, score2
