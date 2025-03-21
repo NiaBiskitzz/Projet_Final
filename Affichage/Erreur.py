@@ -1,4 +1,4 @@
-def game_over(game):
+def game_over(pointage_joueur1, pointage_joueur2):
     pointage_joueur1:playeur1
     pointage_joueur2:playeur2
 
