@@ -42,7 +42,7 @@ elif choix_de_jeu == 5:
     réponce_finale()
     Banque()
     point()
-else 
+else:
     roulette()
     réponce_finale()
     Banque()
