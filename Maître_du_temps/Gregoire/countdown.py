@@ -30,3 +30,5 @@ h = input("Enter the time in hours: ")
 m = input("Enter the time in minutes: ")
 s = input("Enter the time in seconds: ")
 countdown(int(h), int(m), int(s))
+
+#quand temps = 0 termine le jeu
