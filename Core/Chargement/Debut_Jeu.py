@@ -2,7 +2,7 @@ import keyboard
 
 def DebutJeu():
     """
-    Lorsque cette touche est appuyée, le jeu commence
+    Lorsque la touche espace est appuyée, le jeu commence
     """
     print("Appuyer sur la touche 'espace' pour débuter.")
 
