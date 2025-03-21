@@ -4,12 +4,12 @@ import Banque #fonction qui enregistre le nombre de point
 import réponce_finale 
 import début_Jeu #cette fonction permet que lorsque l'espace est actonner lejeu peux commencer
 import point #Afichage des point total
-import jeu_1 #fonction du jeu 1
-import jeu_2  #fonction du jeu 2
-import jeu_3  #fonction du jeu 3
-import jeu_4   #fonction du jeu 4
-import jeu_5   #fonction du jeu 5
-import jeu_6   #fonction du jeu 6
+import battleship #fonction du jeu 1
+import trivia #fonction du jeu 2
+import tape_taupe  #fonction du jeu 3
+import black_jack #fonction jeu4
+import duel #fontiont jeu 5
+import roulette #fonction jeu 6
 
 #démarage du programe des jeux
 début_Jeu()
@@ -18,36 +18,36 @@ choix_de_jeu = fonction_aléatoire()
 choix_de_jeu = int(choix_de_jeu)
 if choix_de_jeu == 1:
     
-    jeu_1()
+    battleship()
     réponce_finale()
     Banque()
     point()
 elif choix_de_jeu == 2:
-    jeu_2()
+    trivia()
     réponce_finale()
     Banque()
     point()
 elif choix_de_jeu == 3:
-    jeu_3()
+    tape_taupe()
     réponce_finale()
     Banque()
     point()
 elif choix_de_jeu == 4:
-    jeu_4()
+    black_jack()
     réponce_finale()
     Banque()
     point()
 elif choix_de_jeu == 5:
-    jeu_5()
+    duel()
     réponce_finale()
     Banque()
     point()
 else 
-    jeu_6()
+    roulette()
     réponce_finale()
     Banque()
     point()
-    
+
 
 
 
