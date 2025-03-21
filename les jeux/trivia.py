@@ -8,19 +8,14 @@ si egalite, roche papier ciseaux"""
 import time
 import datetime
 import random
-import countdown
-
-print(countdown.countdown(0, 10, 0))
-
-
-
-
+from countdown import countdown
 
 input("Voulez vous savoir comment jouer?")
 if input == "oui":
     print("Le but du jeu est de repondre correctement au plus de question possible")
 else:
     print("D'accord, commencons le jeu")
+
 
 
 
