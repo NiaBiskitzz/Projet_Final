@@ -3,7 +3,13 @@
 #player1 = True
 #player2 = False
 
-if player1:
+if joueur1:
     resultat_mini_jeux = True
-elif player2:
+elif joueur2:
+    resultat_mini_jeux = False
+#Si le joueur 1 a un resultats plus grand que le joueur 2, le joueur 1 gagne
+if pointage_joueur1 > pointage_joueur2:
+    resultat_mini_jeux = True
+    #Si le joueur 2 a un resultats plus grand que le joueur 1, le joueur 2 gagne
+elif pointage_joueur1 < pointage_joueur2:
     resultat_mini_jeux = False
