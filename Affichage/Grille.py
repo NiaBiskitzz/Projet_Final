@@ -1,7 +1,18 @@
+import random
 list = ["▢","▢","▢","▢","▢","▢","▢","▢","▢","▢","▢","▢","▢","▢","▢","▢"]
-for ranger in range(4):
-    for ranger in list:
-        print(list[ranger == 0*4 +3])
-        print(list[ranger == 1*4 +3])
-        print(list[ranger == 2*4 +3])
-        print(list[ranger == 3*4 +3])
+#mettre 🛇 dans (x,y)
+x = 2
+y = 2
+list[y*4+x] = "🛇"
+#for i in range(4):
+    #print(list[i*4 +0],list[i*4 +1],list[i*4 +2],list[i*4 +3])
+
+def battle_canoe():
+    #Ensuite mettre les bateaux aleatoirement dasn la grille
+    #fonction random
+    bateau = random.randint(0,15)
+    list[bateau] = "🛶"
+
+battle_canoe()
+for i in range(4):
+    print(list[i*4 +0],list[i*4 +1],list[i*4 +2],list[i*4 +3])
