@@ -1,9 +1,9 @@
 import json
-import request
+import requests
 
 API_URL = "https://opentdb.com/api.php?amount=10&category=11&difficulty=medium&type=boolean"
 
-response = request.get(API_URL)
+response = requests.get(API_URL)
 data = json.loads(response.text)    
 
 questions = data["resultats"]
