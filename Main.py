@@ -1,52 +1,65 @@
-#écrit un max de commentaire
-import fonction_aléatoire #donne un chiffre de façcon aléatoire entre 1 et 6.De plus lorsqu'un chiffre est selectionné celui si ne peut être reselectionée à moin de redémarer la fonction
-import Banque #fonction qui enregistre le nombre de point
-import réponce_finale #fonction qui traduit la réponce du minijeux en vrais ou faux
-import début_Jeu #cette fonction permet que lorsque l'espace est actonner lejeu peux commencer
-import point #Afichage des point total
-import battleship #fonction du jeu batleship
-import trivia #fonction du jeu de quiz
-import tape_taupe  #fonction du jeu tape la taupe
-import black_jack #fonction du jeu de black jack
-import duel #fonction du jeu de duel
-import roulette #fonction jeu de la roulette
 
-#démarage du programe des jeux
-début_Jeu()
+from Core.Aléatoire.aléatoire import aléatoire #donne un chiffre de façcon aléatoire entre 1 et 6 afin de choisir le jeu. De plus, lorsqu'un chiffre est selectionné celui-ci ne peut être reselectionnée à moins de redémarer la fonction.
+from Core.Pointage.Banque import banque #Enregistre le nombre de points
+from Core.Pointage.Réponse_finale import reponsefinale #Traduit la réponse du minijeu en vrai ou faux
+from Core.Chargement.Debut_Jeu import DebutJeu #Lorsque l'espace est actonné le jeu peut commencer
+from Affichage.Effacer import effacer #Permet d'effacer le jeu précédent
+from Affichage.Erreur import game_over #Affichage du gagnant et perdant ainsi que les points gagnés entre les jeux
+from Affichage.point import add #Affiche le nombre de points entre les jeux
+import  #Battleship
+import  #Quiz
+from Taper import Taper  #Tape la taupe
+from black_jack import black_jack #Black jack
+from duel import duel #Duel
+import RouletteCasino #Roulette
+
+#démarage du programme des jeux
+DebutJeu()
 #Séléction du jeu de façon aléatoire
-choix_de_jeu = fonction_aléatoire()
+choix_de_jeu = aléatoire()
 choix_de_jeu = int(choix_de_jeu)
 if choix_de_jeu == 1:
-    
     battleship()
-    réponce_finale()
-    Banque()
-    point()
+    reponsefinale()
+    banque()
+    game_over()
+    add()
+    effacer()
 elif choix_de_jeu == 2:
     trivia()
-    réponce_finale()
-    Banque()
-    point()
+    reponsefinale()
+    banque()
+    game_over()
+    add()
+    effacer()
 elif choix_de_jeu == 3:
     tape_taupe()
-    réponce_finale()
-    Banque()
-    point()
+    reponsefinale()
+    banque()
+    game_over()
+    add()
+    effacer()
 elif choix_de_jeu == 4:
     black_jack()
-    réponce_finale()
-    Banque()
-    point()
+    reponsefinale()
+    banque()
+    game_over()
+    add()
+    effacer()
 elif choix_de_jeu == 5:
     duel()
-    réponce_finale()
-    Banque()
-    point()
+    reponsefinale()
+    banque()
+    game_over()
+    add()
+    effacer()
 else:
     roulette()
-    réponce_finale()
-    Banque()
-    point()
+    reponsefinale()
+    banque()
+    game_over()
+    add()
+    effacer()
 
 
 
