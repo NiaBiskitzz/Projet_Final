@@ -15,4 +15,6 @@ def duel():
         print("devez attendre que le décompte soit terminer pour tirer.Si un joeur tire avant que le décompte soi terminer le joeur qui a tiré à un pénalité")
     
     event1 = keyboard.read_event()
-    if event1.event_type == keyboard.KEY_DOWN and event1.name == 's'and :
+    if event1.event_type == keyboard.KEY_DOWN and event1.name == 's':#quand tu touche le s
+    
+    if event1.event_type == keyboard.KEY_DOWN and event1.name == 'k' : #quand tu touche k
