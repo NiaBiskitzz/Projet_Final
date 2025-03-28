@@ -13,3 +13,7 @@ les jouer doivent donc compter le temps auquel ils doivent attendre pour commenc
 La dernière round vas être similaire à la première sauf que l'attente vas être de 20 seconde
 le duel vas être le jeux 5 charles s'occupe de ce jeu
 Le jeu 6 sera le jeu de roulette au casino     antoine s'occupe de ce jeu
+Pour jouer au jeu de la roulette il faut commencer par miser soit sur un chiffre
+ou sur une couleur (rouge/noir) ou sur pair/impaire ou sur un groupe de chiffre
+(1-12, 13-24, 25-36). Ensuite, le croupier lance la roulette et lance la bille
+si la bille tombe sur ce que l'on a miser, on gagne

@@ -24,6 +24,7 @@ def countdown(h, m, s):
         total_seconds -= 1
  
     print("Bzzzt! The countdown is at zero seconds!")
+
  
 # Entré utilisateur pour les heures, minutes et secondes
 h = input("Enter the time in hours: ")
