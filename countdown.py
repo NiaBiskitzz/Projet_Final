@@ -1,4 +1,4 @@
-import time
+4545import time
 import datetime
  
 # Crée une fonction
