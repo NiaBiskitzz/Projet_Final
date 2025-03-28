@@ -1,5 +1,5 @@
 
-from Core.Aléatoire.aléatoire import aléatoire #donne un chiffre de façcon aléatoire entre 1 et 6 afin de choisir le jeu. De plus, lorsqu'un chiffre est selectionné celui-ci ne peut être reselectionnée à moins de redémarer la fonction.
+from Core.Aléatoire.aléatoire import aléatoire #Donne un chiffre de façon aléatoire entre 1 et 6 afin de choisir le jeu. De plus, lorsqu'un chiffre est selectionné celui-ci ne peut être reselectionnée à moins de redémarer la fonction.
 from Core.Pointage.Banque import banque #Enregistre le nombre de points
 from Core.Pointage.Réponse_finale import reponsefinale #Traduit la réponse du minijeu en vrai ou faux
 from Core.Chargement.Debut_Jeu import DebutJeu #Lorsque l'espace est actonné le jeu peut commencer
@@ -13,9 +13,9 @@ from black_jack import black_jack #Black jack
 from duel import duel #Duel
 import RouletteCasino #Roulette
 
-#démarage du programme des jeux
+#Démarage du programme des jeux
 DebutJeu()
-#Séléction du jeu de façon aléatoire
+#Sélection du jeu de façon aléatoire
 choix_de_jeu = aléatoire()
 choix_de_jeu = int(choix_de_jeu)
 if choix_de_jeu == 1:
@@ -33,7 +33,7 @@ elif choix_de_jeu == 2:
     add()
     effacer()
 elif choix_de_jeu == 3:
-    tape_taupe()
+    Taper()
     reponsefinale()
     banque()
     game_over()
