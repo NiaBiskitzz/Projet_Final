@@ -1,6 +1,6 @@
 from Maître_du_temps.Amé import Input_Temps_Reel
 from Core.Chargement import Debut_Jeu
-from Core.Pointage import Banque
+from Core.Pointage import Réponse_finale
 from Maître_du_temps.Gregoire import countdown
 
 def Taper():
@@ -16,7 +16,7 @@ def Taper():
         score1, score2 = Input_Temps_Reel.InputTempsReel()
 
         #Apporter les variables pointage_joueur1 et pointage_joueur2 de Banque
-        pointage_joueur1, pointage_joueur2 = Banque.banque()
+        pointage_joueur1, pointage_joueur2 = Réponse_finale.reponsefinale()
 
         #Il faut appuyer sur la touche espace pour débuter le jeu
         Debut_Jeu.DebutJeu()
