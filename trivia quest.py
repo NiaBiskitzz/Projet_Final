@@ -78,4 +78,4 @@ def trivia_game2():
         roche_papier_ciseaux()
 
 # Démarrer le jeu
-trivia_game()
+trivia_game1()
