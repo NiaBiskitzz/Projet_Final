@@ -2,7 +2,10 @@
 
 #player1 = True
 #player2 = False
-
+joueur1 = input()
+joueur2 = input()
+pointage_joueur1 = 0
+pointage_joueur2 = 0
 if joueur1:
     resultat_mini_jeux = True
 elif joueur2:
