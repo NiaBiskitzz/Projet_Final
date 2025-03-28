@@ -1,6 +1,19 @@
 import json
 import requests
+ #Import the time library
+import time
 
+# Calculate the start time
+start = time.time()
+
+# Code here
+
+# Calculate the end time and time taken
+end = time.time()
+length = end - start
+
+# Show the results : this can be altered however you like
+print("It took", length, "seconds!")
 API_URL = "https://opentdb.com/api.php?amount=10&category=11&difficulty=medium&type=boolean"
 
 response = requests.get(API_URL)
