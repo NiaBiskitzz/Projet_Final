@@ -6,7 +6,7 @@ from Debut_jeu import DebutJeu
 
 def Taper():
     """
-    Le gagnant est la personne qui tape le plus grand nombre de fois suer sa touche.
+    Le gagnant est la personne qui tape le plus grand nombre de fois sur sa touche.
     """
     print("Le but du jeu est d'appuyer le plus grand nombre de fois sur votre touche. La touche du joueur 1 est s et celle du joueur 2 est k.")
 
