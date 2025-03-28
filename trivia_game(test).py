@@ -6,7 +6,7 @@ API_URL = "https://opentdb.com/api.php?amount=10&category=11&difficulty=medium&t
 response = requests.get(API_URL)
 data = json.loads(response.text)    
 
-questions = data["resultats"]
+questions = data["results"]
 
 correct_answers = 0
 for question in questions:
