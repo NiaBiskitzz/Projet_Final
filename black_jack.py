@@ -112,22 +112,22 @@ def black_jack():
             Player1_stand = True
         player2_continue = input("player2 hit ou stand")
         if player2_continue == "hit":
-            player2_card3 = random.choice(deck)
-            deck.remove(player2_card3)
-            print(Player2_card1, Player2_card2, player2_card3)
-            if Player2_card1['value'] + Player2_card2['value'] + player2_card3['value'] > 21:
+            Player2_card3 = random.choice(deck)
+            deck.remove(Player2_card3)
+            print(Player2_card1, Player2_card2, Player2_card3)
+            if Player2_card1['value'] + Player2_card2['value'] + Player2_card3['value'] > 21:
                 print("Player2 a busté")
                 break
-            elif Player2_card1['value'] + Player2_card2['value'] + player2_card3['value'] == 21:
+            elif Player2_card1['value'] + Player2_card2['value'] + Player2_card3['value'] == 21:
                 print("Player2 a gagné")
                 break
         elif player2_continue == "stand":
             Player2_stand = True
     
     if Player1_card1['value'] + Player1_card2['value'] + Player1_card3['value'] > Player2_card1['value'] + Player2_card2['value'] + Player2_card3['value']<= 21:
-        print("Player1 a gagné")
+        print("Player2 a buster, Player1 a gagné")
     elif Player1_card1['value'] + Player1_card2['value'] + Player1_card3['value'] < Player2_card1['value'] + Player2_card2['value'] + Player2_card3['value']<= 21:
-        print("Player2 a gagné")
+        print("Player1 a buster, Player2 a gagné")
 
 
 print(black_jack)
