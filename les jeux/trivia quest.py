@@ -1,32 +1,55 @@
 import random
-import countdown# marche pas, il faut que le code roule pendant le countdown
+#import countdown# marche pas, il faut que le code roule pendant le countdown
 
-def trivia_game():
-    questions = [
-        {"question": "Quelle est la capitale de la France ?", "answer": "Paris"},
-        {"question": "Combien de continents y a-t-il ?", "answer": "7"},
-        {"question": "Quelle planète est connue comme la planète rouge ?", "answer": "Mars"},
-        {"question": "Quelle est la racine carrée de 81 ?", "answer": "9"},
-        {"question": "Quel est le plus grand océan sur Terre ?", "answer": "Pacifique"}
+def trivia_game1():
+    questions1 = [
+        {"question": "Quelle est la capitale de la France ?", "reponse": "Paris"},
+        {"question": "Combien de continents y a-t-il ?", "reponse": "7"},
+        {"question": "Quelle planète est connue comme la planète rouge ?", "reponse": "Mars"},
+        {"question": "Quelle est la racine carrée de 81 ?", "reponse": "9"},
+        {"question": "Quel est le plus grand océan sur Terre ?", "reponse": "Pacifique"}
     ]
 
-    def ask_questions(player):
+def ask_questions1(player):
         print(f"\n{player}, c'est ton tour !")
         score = 0
-        for q in questions:
-            user_answer = input(q["question"] + " ")
-            if user_answer.lower() == q["answer"].lower():
+        for q in questions1:
+            user_reponse = input(q["question"] + " ")
+            if user_reponse.lower() == q["reponse"].lower():
                 print("Bonne réponse !")
                 score += 1
             else:
-                print(f"Mauvaise réponse ! La bonne réponse était : {q['answer']}")
+                print(f"Mauvaise réponse ! La bonne réponse était : {q['reponse']}")
+        return score
+
+
+def trivia_game2():
+    questions2 = [
+        {"question": "Quel est le nom du pere de thor?", "reponse": "Odin"},
+        {"question": "Quel était le nom de New York entre 1624 et 1664 ?", "reponse": "New Amsterdam"},
+        {"question": "D'où vien SuperMan?", "reponse": "Krypton"},
+        {"question": "Qui est réellement Batman?", "reponse": "Bruce Wayne"},
+        {"question": "Quel est le nom du chien de Mickey Mouse?", "reponse": "Pluto"},
+        {"question": "Quel est le nom du premier film de Star Wars?", "reponse": "A New Hope"}
+    ]
+
+    def ask_questions2(player):
+        print(f"\n{player}, c'est ton tour !")
+        score = 0
+        for q in questions2:
+            user_reponse = input(q["question"] + " ")
+            if user_reponse.lower() == q["reponse"].lower():
+                print("Bonne réponse !")
+                score += 1
+            else:
+                print(f"Mauvaise réponse ! La bonne réponse était : {q['reponse']}")
         return score
 
     player1 = input("Nom du joueur 1 : ")
     player2 = input("Nom du joueur 2 : ")
 
-    score1 = ask_questions(player1)
-    score2 = ask_questions(player2)
+    score1 = ask_questions1(player1)
+    score2 = ask_questions2(player2)
 
     print(f"\nRésultats : {player1} a {score1} points, {player2} a {score2} points.")
 
