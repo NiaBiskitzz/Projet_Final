@@ -17,7 +17,7 @@ def black_jack():
     definir le gagnant du jeu de black jack
 
     Paramètres
-    import random
+    ----------
     """
     # Dictionnary for the card values
     ace_of_hearts = {'suit': 'Hearts', 'value': 11}
@@ -76,5 +76,19 @@ def black_jack():
     three_of_spades = {'suit': 'Spades', 'value': 3}
     two_of_spades = {'suit': 'Spades', 'value': 2}
 
+    if player1_total > 21:
+        
+
     # List of the cards
     deck = [ace_of_hearts, king_of_hearts, queen_of_hearts, jack_of_hearts, ten_of_hearts, nine_of_hearts, eight_of_hearts, seven_of_hearts, six_of_hearts, five_of_hearts, four_of_hearts, three_of_hearts, two_of_hearts, ace_of_diamonds, king_of_diamonds, queen_of_diamonds, jack_of_diamonds, ten_of_diamonds, nine_of_diamonds, eight_of_diamonds, seven_of_diamonds, six_of_diamonds, five_of_diamonds, four_of_diamonds, three_of_diamonds, two_of_diamonds, ace_of_clubs, king_of_clubs, queen_of_clubs, jack_of_clubs, ten_of_clubs, nine_of_clubs, eight_of_clubs, seven_of_clubs, six_of_clubs, five_of_clubs, four_of_clubs, three_of_clubs, two_of_clubs, ace_of_spades, king_of_spades, queen_of_spades, jack_of_spades, ten_of_spades, nine_of_spades, eight_of_spades, seven_of_spades, six_of_spades, five_of_spades, four_of_spades, three_of_spades, two_of_spades]
+
+    #start of the game
+    print("Bienvenue dans le jeu de Black Jack!")  # Welcome message
+    input("Appuyer sur entrer pour recevoir les cartes")  # Wait for the player to press enter
+    import random  # Import random library.
+    player1_card1 = random.choice(deck)  # Choose a random card from the deck
+    deck.remove(player1_card1)  # Remove the card from the deck
+    player1_card2 = random.choice(deck)  # Choose a random card from the deck
+    deck.remove(player1_card2)  # Remove the card from the deck
+    print(player1_card1, player1_card2)  # Print the cards
+    player1_total = player1_card1['value'] + player1_card2['value']  # Calculate the total value of the cards
