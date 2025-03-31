@@ -109,3 +109,4 @@ def black_jack():
             deck.remove(player1_card3)  # Choose a random card from the deck
 
 """Check if theres a way to add more cards to the player hand without having to write the same code over and over again"""
+"""make a list with player_hand for cards and use apend"""
