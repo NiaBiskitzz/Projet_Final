@@ -32,5 +32,3 @@ def countdown(h, m, s):
         total_seconds -= 1
  
     print("Bzzzt! The countdown is at zero seconds!")
-
- 
