@@ -6,3 +6,4 @@ def decompte():
         print(countdown)
         sleep(1)
         countdown -= 1
+print (decompte())
