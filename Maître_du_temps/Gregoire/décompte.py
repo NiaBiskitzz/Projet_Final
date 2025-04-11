@@ -6,4 +6,3 @@ def decompte():# création de la fonction
         print(countdown)# affiche le temps restant
         sleep(1)# pause de 1 seconde entre chiffre pour rendre sa smooth
         countdown -= 1 # -1 seconde après chaque boucle
-print (decompte())
