@@ -1,6 +1,6 @@
 import time
 import datetime
- 
+
 # Crée une fonction
 def countdown(h, m, s):
 
@@ -32,5 +32,3 @@ def countdown(h, m, s):
         total_seconds -= 1
  
     print("Bzzzt! The countdown is at zero seconds!")
-
- 
