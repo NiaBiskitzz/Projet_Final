@@ -55,14 +55,14 @@ def trivia_game():
 
     player_count = input("combien de joueur? (1 , 2, or 3)")# choix du nombre de joeur
 
-    if player_count != "1" and player_count != "2" and player_count !="3": 
+    if player_count != "1" and player_count != "2" and player_count !="3": # si quelque chose d'autres est entré, message d'erreur
         print ("entre invalide - reesayer")
         player_count = 0
         counter = 100
 
     player_num = 1
     while counter <= fixed_game_length:
-        print ("Ok " + "player " + str(player_num) + " c'est ton tour.  Answer question " + str(counter) + " of " + str(fixed_game_length))
+        print ("Ok " + "player " + str(player_num) + " c'est ton tour.  Answer question " + str(counter) + " of " + str(fixed_game_length))# dit a l'utilisateur combien de question à répondre
         question_num = randint(1, game_length) - 1
         question = questions[question_num]
         answer_question = input (question)
