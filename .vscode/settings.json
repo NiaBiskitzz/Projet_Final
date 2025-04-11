@@ -4,5 +4,6 @@
         "reportMissingModuleSource": "none",
         "reportShadowedImports": "none"
     },
-    "circuitpython.board.version": null
+    "circuitpython.board.version": null,
+    "python.defaultInterpreterPath": "\"C:\\Program Files\\Python313\\python.exe\""
 }

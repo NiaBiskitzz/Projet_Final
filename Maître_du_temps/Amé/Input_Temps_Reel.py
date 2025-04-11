@@ -1,4 +1,8 @@
 import keyboard
+from datetime import datetime 
+
+debut = datetime.now()
+fin = debut + 5
 
 def InputTempsReel():
     """
@@ -17,7 +21,7 @@ def InputTempsReel():
     a = True
 
     #Pendant que a est égale à vrai
-    while (a == True):
+    while (a == True) and :
         #Lire les touches de clavier appuyées
         event1 = keyboard.read_event()
         #Si la touche appuyée est s
