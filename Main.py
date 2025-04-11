@@ -11,7 +11,7 @@ import  #Quiz
 from Taper import Taper  #Tape la taupe
 from black_jack import black_jack #Black jack
 from duel import duel #Duel
-import RouletteCasino #Roulette
+from RouletteCasino import roulette() #Roulette
 
 #Démarage du programme des jeux
 DebutJeu()
@@ -20,11 +20,11 @@ choix_de_jeu = aléatoire()
 choix_de_jeu = int(choix_de_jeu)
 if choix_de_jeu == 1:
     battleship()
-    reponsefinale()
-    banque()
-    game_over()
-    add()
-    effacer()
+    reponsefinale() #Traduit réponse minijeu vrai ou faux
+    banque() #Enregistre le nombre de points
+    game_over() #Affiche le gagnant et perdant et les points gagnés après le jeu
+    add() #Afficher le nombre de points entre les jeux
+    effacer() #Effacer ce qui est dans le terminal pour le jeu
 elif choix_de_jeu == 2:
     trivia()
     reponsefinale()
