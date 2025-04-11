@@ -23,7 +23,7 @@ while bateau != (x,y):
     x = int(input())
     y = int(input())
     list[y*4+x] = "🛇"
-
+#print reussi si sa donne la bonne combinaison 
     if bateau == (x,y):
       print("Reussi")
     else:
