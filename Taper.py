@@ -32,7 +32,7 @@ def Taper():
     Debut_Jeu.DebutJeu()
 
     #Partir le temps
-    countdown.countdown()
+    countdown.countdown(h,s,m)
 
     while countdown.countdown() and total_seconds != 0:
         #Le nombre de fois que les joueurs appuient sur leur touche (s et k) est compté
@@ -42,3 +42,5 @@ def Taper():
         pointage_joueur2 = score2
         #Retourner les scores aux codes de pointage pour déterminer le gagnant
     return pointage_joueur1, pointage_joueur2 
+
+Taper() 
