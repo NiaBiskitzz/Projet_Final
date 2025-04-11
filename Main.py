@@ -22,7 +22,7 @@ if choix_de_jeu == 1:
     battleship()
     reponsefinale() #Traduit réponse minijeu vrai ou faux
     banque() #Enregistre le nombre de points
-    game_over() #Affiche le gagnant et perdant et les points gagnés entre les jeux
+    game_over() #Affiche le gagnant et perdant et les points gagnés après le jeu
     add() #Afficher le nombre de points entre les jeux
     effacer() #Effacer ce qui est dans le terminal pour le jeu
 elif choix_de_jeu == 2:

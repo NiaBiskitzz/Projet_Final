@@ -20,7 +20,7 @@ def Taper():
     s = 45
     h = int(h)
     m = int(m)
-    s = int(h)
+    s = int(s)
 
     #Apporter les variables score1 et score2 de Input_Temps_Reel
     score1, score2 = Input_Temps_Reel.InputTempsReel()
