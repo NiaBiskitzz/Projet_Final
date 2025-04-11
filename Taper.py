@@ -23,8 +23,11 @@ def Taper():
     #Apporter la variable countdown de décompte
     countdown = décompte.decompte()
 
+    #Appel de la fonction pour avoir un décompte de 5 secondes
+    decompte()
+
     #Pendant que countdown n'est pas équivalent à 0
-    while decompte() and countdown != 0:
+    while countdown != 0:
         #Le nombre de fois que les joueurs appuient sur leur touche (s et k) est compté
         Input_Temps_Reel.InputTempsReel()
         #Les scores (variables du jeu) sont égaux aux pointages (variables qui déterminent le gagnant)
