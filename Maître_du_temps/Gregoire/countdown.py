@@ -1,7 +1,5 @@
 import time
 import datetime
- 
-
 
 # Crée une fonction
 def countdown(h, m, s):
