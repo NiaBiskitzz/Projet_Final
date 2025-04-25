@@ -7,7 +7,7 @@ from Affichage.Effacer import effacer #Permet d'effacer le jeu précédent
 from Affichage.Erreur import game_over #Affichage du gagnant et perdant ainsi que les points gagnés entre les jeux
 from Affichage.point import add #Affiche le nombre de points entre les jeux
 import  #Battleship
-import  #Quiz
+import jouer_trivia
 from Taper import Taper  #Tape la taupe
 from black_jack import black_jack #Black jack
 from duel import duel #Duel
