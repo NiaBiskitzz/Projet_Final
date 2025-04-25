@@ -1,7 +1,8 @@
-def game_over(pointage_joueur1):
-    pointage_joueur1:playeur1
 
-    if  pointage_joueur1 == True: #si la donnée du joueur 1 est vrai sa veut dire qu'il obtient 1 point supplementaire et le joueur 2
+
+def game_over(resultat_mini_jeux):
+
+    if  resultat_mini_jeux == True: #si la donnée du joueur 1 est vrai sa veut dire qu'il obtient 1 point supplementaire et le joueur 2
         #perd cepandent il ne perd pas de point.
         print("    Playeur 1   ")
         print("________________") 
@@ -13,7 +14,7 @@ def game_over(pointage_joueur1):
         print("|              |")
         print("|    PERDU!    |")
         print("|______________|")
-    if  pointage_joueur1 == False:
+    if  resultat_mini_jeux == False:
         print("    Playeur 1   ")
         print("________________")
         print("|              |")
@@ -24,9 +25,6 @@ def game_over(pointage_joueur1):
         print("|              |")
         print("|   +1 point   |")
         print("|______________|")
-       
-
-game_over(False)
 
 
 

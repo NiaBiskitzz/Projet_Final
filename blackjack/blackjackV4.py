@@ -5,6 +5,7 @@ import Dealer
 import player_hit
 
 
+
 ### def create_blackjack_deck():
 
 # Create a deck of cards
@@ -51,18 +52,22 @@ elif Player2_total > 21:  # Check if player 2 has busted
 
 answer_player1 = ""
 answer_player2 = ""
-while (len(Player1_hand) < 11 and Player1_total < 21) or (len(Player2_hand) < 11 and Player2_total <21) or (answer_player1 == "hit" or answer_player2 == "hit"):  # Loop until player 1 or player 2 has 11 cards or reaches/ exceed a total of 21
+while (len(Player1_hand) < 11 and Player1_total < 21) or (len(Player2_hand) < 11 and Player2_total <21) or (answer_player1 == "stand" and answer_player2 == "stand"):  # Loop until player 1 or player 2 has 11 cards or reaches/ exceed a total of 21 or both players stand
     # Player 1's turn
     if len(Player1_hand) < 11 and Player1_total < 21:
         print("Player 1, hit ou stand?")  # Ask if player 1 wants to hit or stand
         answer_player1 = input()  # Get the player's response
         if answer_player1 == "hit":  # If the player hits
-            new_card = Dealer.deal_card(deck)  # Deal a new card from the deck
-            new_card = player_hit(Player1_hand, deck)  # Deal a new card to player 1
+            new_card = player_hit.player_hit(Player1_hand, deck)  # Deal a new card to player 1
             Player1_total = HandTotal.calculate_hand_total(Player1_hand)  # Calculate the new total value of player 1's hand
             print("la nouvelle carte est: ", new_card)  # Display the new card
             print("Vos cartes sont: ", Player1_hand)    # Display player 1's hand
             print("la valeur de vos cartes est: ", Player1_total)  # Display the total value of player 1's hand
+            if Player1_total == 21:  # Check if player 1 has a blackjack
+                print("Player 1 a un blackjack!")
+            elif Player1_total > 21:  # Check if player 1 has busted
+                print("Player 1 a busté!")
+                break
         else:
             if answer_player1 == "stand":
                 pass  # Do nothing if the player does not want another card
@@ -72,11 +77,16 @@ while (len(Player1_hand) < 11 and Player1_total < 21) or (len(Player2_hand) < 11
         print("Player 2, hit ou stand?")  # Ask if player 2 wants to hit or stand 
         answer_player2 = input()  # Get the player's response
         if answer_player2 == "hit":  # If the player hits
-            new_card = player_hit(Player2_hand, deck)  # Deal a new card to player 2
+            new_card = player_hit.player_hit(Player2_hand, deck)  # Deal a new card to player 2
             Player2_total = HandTotal.calculate_hand_total(Player2_hand)  # Calculate the new total value of player 2's hand
             print("la nouvelle carte est: ", new_card)  # Display the new card
             print("Vos cartes sont: ", Player2_hand)    # Display player 2's hand
             print("la valeur de vos cartes est: ", Player2_total)  # Display the total value of player 2's hand
+            if Player2_total == 21:  # Check if player 2 has a blackjack
+                print("Player 2 a un blackjack!")
+            elif Player2_total > 21:  # Check if player 2 has busted
+                print("Player 2 a busté!")
+                break
         else:
             if answer_player2 == "stand":
                 pass  # Exit the loop if the player does not want another card
