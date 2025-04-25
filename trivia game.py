@@ -1,4 +1,6 @@
 # Jeu de trivia pour deux joueurs
+from Core.Pointage import Réponse_finale
+
 
 # Questions et réponses
 questions = [
