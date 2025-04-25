@@ -1,4 +1,7 @@
-def add(point_1, point_2): #les 2 pointage
+from Core.Pointage import Réponse_finale
+
+
+def add(point_joueur1, point_joueur2): #les 2 pointage
     """
     afficher le pointage final
 
@@ -12,9 +15,7 @@ def add(point_1, point_2): #les 2 pointage
 #les print avec le pointage fianle.
     print("      ********                              ********")            
     print("   ****      ****                        ****      ****")        
-    print(f" ***      {point_1}     ***                    ***     {point_2}     ***")       
+    print(f" ***      {point_joueur1}     ***                    ***     {point_joueur2}     ***")       
     print(" ***            ***                    ***            ***")   
     print("   ****      ****                        ****      ****")
     print("      ********                              ********") 
-
-add(5,27)

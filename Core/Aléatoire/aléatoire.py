@@ -1,7 +1,7 @@
 # Fonction aléatoire
 
 liste_jeux=[1,2,3,4,5,6]
-
+import random   # Import random library.
 def aléatoire():
     """
     Choisir un jeu aléatoire 1 à 6.
@@ -36,7 +36,7 @@ def aléatoire():
         return 6
     """
 
-    import random   # Import random library.
+    
     Random_game=random.choice(liste_jeux)   # Choose a random game from the list.
     # conditions and returns while making sure the option is removed from the list.
     if Random_game==1:
@@ -64,10 +64,3 @@ def aléatoire():
         print("Jeu 6")
         return 6
 
-# Tests (optionnal), Remove when done.
-print(aléatoire())
-print(aléatoire())
-print(aléatoire())
-print(aléatoire())
-print(aléatoire())
-print(aléatoire())

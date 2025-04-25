@@ -1,3 +1,6 @@
+### This is pretty trash too###
+
+
 """
 Le jeu black jack utilise 52 cartes de poker(excluant les jokers). 
 Chaque carte a une valeur entre 1 et 11. 
@@ -82,7 +85,7 @@ def black_jack():
     #start of the game
     print("Bienvenue dans le jeu de Black Jack!")  # Welcome message
     input("Appuyer sur entrer pour recevoir les cartes")  # Wait for the player to press enter
-    import random  # Import random library.
+    
     player1_card1 = random.choice(deck)  # Choose a random card from the deck
     deck.remove(player1_card1)  # Remove the card from the deck
     player1_card2 = random.choice(deck)  # Choose a random card from the deck
@@ -94,6 +97,7 @@ def black_jack():
         print("Black Jack!")  # Print a message if the player has a Black Jack
     elif player1_total <21:  # Check if the total is less than 21
         player1_continue = input("Player 1, hit or stand?")
+    
     player2_card1 = random.choice(deck)  # Choose a random card from the deck
     player2_card2 = random.choice(deck)  # Choose a random card from the deck
     print(player2_card1, player2_card2)  # Print the cards
@@ -103,6 +107,7 @@ def black_jack():
         print("Black Jack!")  # Print a message if the player has a Black Jack
     elif player2_total < 21:
         player2_continue = input("Player 2, hit or stand?")  # Ask the player if they want to hit or stand
+    
     while player1_continue == "hit" or player2_continue == "hit":  # While the player wants to hit
         if player1_continue == "hit":  # Check if the player wants to hit
             player1_card3 = random.choice(deck)

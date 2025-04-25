@@ -1,7 +1,6 @@
 from Maître_du_temps.Amé import Input_Temps_Reel #Compte le nombre de fois que les touches s et k sont appuyées
 from Core.Chargement import Debut_Jeu #Appuyer sur la touche espace pour débuter le jeu
 from Core.Pointage import Réponse_finale #Apporter les variables pour calculer les points des joueurs
-from décompte import decompte #Décompte de 5 secondes
 
 def Taper():
     """
@@ -20,20 +19,12 @@ def Taper():
     #Il faut appuyer sur la touche espace pour débuter le jeu
     Debut_Jeu.DebutJeu()
 
-    #Apporter la variable countdown de décompte
-    countdown = décompte.decompte()
-
-    #Appel de la fonction pour avoir un décompte de 5 secondes
-    decompte()
-
-    #Pendant que countdown n'est pas équivalent à 0
-    while countdown != 0:
-        #Le nombre de fois que les joueurs appuient sur leur touche (s et k) est compté
-        Input_Temps_Reel.InputTempsReel()
-        #Les scores (variables du jeu) sont égaux aux pointages (variables qui déterminent le gagnant)
-        pointage_joueur1 = score1
-        pointage_joueur2 = score2
-        #Retourner les scores aux codes de pointage pour déterminer le gagnant
+    #Le nombre de fois que les joueurs appuient sur leur touche (s et k) est compté
+    Input_Temps_Reel.InputTempsReel()
+    #Les scores (variables du jeu) sont égaux aux pointages (variables qui déterminent le gagnant)
+    pointage_joueur1 = score1
+    pointage_joueur2 = score2
+    #Retourner les scores aux codes de pointage pour déterminer le gagnant
     return pointage_joueur1, pointage_joueur2 
 
 #Appel de la fonction
