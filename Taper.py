@@ -1,5 +1,5 @@
 from Maître_du_temps.Amé import Input_Temps_Reel
-from Core.Chargement import Debut_Jeu
+from Core.chargement import Debut_Jeu
 from Core.Pointage import Réponse_finale
 from Maître_du_temps.Gregoire import countdown
 import time
