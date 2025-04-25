@@ -13,9 +13,9 @@ def duel():
         print("ce jeux ce compose de 3 round et celle si est la première.Vous devez tirer sur l'autre joueur le plus rapidement possible après le temp donner")
         time.sleep(5)
         print("devez attendre que le décompte soit terminer pour tirer.Si un joeur tire avant que le décompte soi terminer le joeur qui a tiré à un pénalité")
-    round_starting_time = time.now()
+    round_starting_time = time.clock_get_time()
 
     event1 = keyboard.read_event()
-    if (event1.event_type == keyboard.KEY_DOWN and event1.name == 's' ) and ( round_starting_time ):
+    if (event1.event_type == keyboard.KEY_DOWN and event1.name == 's' ) and ( round_starting_time  ):
     
     if (event1.event_type == keyboard.KEY_DOWN and event1.name == 'k' ) and ( round_starting_time ):
