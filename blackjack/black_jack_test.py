@@ -1,6 +1,4 @@
 ### This is pretty trash too###
-import random  # Import random library.
-
 
 
 """

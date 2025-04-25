@@ -27,6 +27,7 @@ def roulette():
     if joueur1 == nombre_roulette:
             score_joueur1 += 5
             print("Joueur 1 gagne 5 points!")
+
     elif joueur2 == nombre_roulette:
             score_joueur2 += 5
             print("Joueur 2 gagne 5 points!")
