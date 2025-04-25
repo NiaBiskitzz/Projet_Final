@@ -1,15 +1,14 @@
-
 from random import random # importation des modules
 from random import randint
 def trivia_game():
     Films = {#dictionnaire pour les questions
-    "Quel est le nom du pere de thor?": "Odin",
-    "Quel était le nom de New York entre 1624 et 1664 ?": "New Amsterdam",
-    "D'où vien SuperMan?": "Krypton",
-    "Qui est réellement Batman?": "Bruce Wayne",
-    "Quel est le nom du chien de Mickey Mouse?": "Pluto",
-    "Quel est le nom du premier film de Star Wars?": "A New Hope"
-}
+        "Quel est le nom du pere de thor?": "Odin",
+        "Quel était le nom de New York entre 1624 et 1664 ?": "New Amsterdam",
+        "D'où vien SuperMan?": "Krypton",
+        "Qui est réellement Batman?": "Bruce Wayne",
+        "Quel est le nom du chien de Mickey Mouse?": "Pluto",
+        "Quel est le nom du premier film de Star Wars?": "A New Hope"
+    }
 
     Geographie = {"Quel pays possède le plus grand nombre d’îles dans le monde?": "Suède", "Quel est le plus petit pays du monde?": "Vatican", "Quel est le plus petit pays du monde?": "Vatican", "Quel est la capital du Canada": " Ottawa", "Citez le nom de la plus vaste chaine de montagne": "les Andes", "Citez le nom du plus long fleuve du monde": "le Nil", "Quel est le site naturel le plus bas de la planete terre": "la fosse de Mariannes"}
 
@@ -17,20 +16,20 @@ def trivia_game():
     kings_and_queens_of_rock = { "Who is known as the 'King of Rock and Roll'?": "Elvis Presley", "Who is known as the 'Queen of Rock and Roll'?": "Tina Turner", "Who is known as the 'Godfather of Soul'?": "James Brown", "Who is known as the 'King of the Blues'?": "B.B. King", "Who is known as the 'Queen of Soul'?": "Aretha Franklin", "Who is known as the 'King of Pop'?": "Michael Jackson", "Who is known as the 'Queen of Pop'?": "Madonna", "Who is known as the 'King of Punk'?": "Iggy Pop", "Who is known as the 'Queen of Punk'?": "Patti Smith", "Who is known as the 'King of Metal'?": "Ozzy Osbourne", "Who is known as the 'Queen of Metal'?": "Lita Ford", "Who is known as the 'King of Rockabilly'?": "Elvis Presley", "Who is known as the 'Queen of Rockabilly'?": "Wanda Jackson", "Who is known as the 'King of Country'?": "George Strait",}
 
     def switch_player(current_player, player_count):# fonction pour pointage de chaque joeur
-     if player_count == 3:
-        if current_player < 3:
-            new_player = current_player + 1
+        if player_count == 3:
+            if current_player < 3:
+                new_player = current_player + 1
+            else:
+                new_player = 1
+        if player_count == 2:
+            if current_player == 1:
+                new_player = 2
         else:
+                new_player = 1
+        if player_count == 1:
             new_player = 1
-     if player_count == 2:
-        if current_player == 1:
-            new_player = 2
-        else:
-            new_player = 1
-     if player_count == 1:
-        new_player = 1
     
-     return new_player
+        return new_player
 
 
 
@@ -56,14 +55,14 @@ def trivia_game():
 
     player_count = input("combien de joueur? (1 , 2, or 3)")# choix du nombre de joeur
 
-    if player_count != "1" and player_count != "2" and player_count !="3": 
+    if player_count != "1" and player_count != "2" and player_count !="3": # si quelque chose d'autres est entré, message d'erreur
         print ("entre invalide - reesayer")
         player_count = 0
         counter = 100
 
     player_num = 1
     while counter <= fixed_game_length:
-        print ("Ok " + "player " + str(player_num) + " c'est ton tour.  Answer question " + str(counter) + " of " + str(fixed_game_length))
+        print ("Ok " + "player " + str(player_num) + " c'est ton tour.  Answer question " + str(counter) + " of " + str(fixed_game_length))# dit a l'utilisateur combien de question à répondre
         question_num = randint(1, game_length) - 1
         question = questions[question_num]
         answer_question = input (question)
