@@ -1,4 +1,4 @@
-
+from blackjack.Dealer import deal_card
 
 
 def player_hits(player_hand, deck):
