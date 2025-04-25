@@ -26,7 +26,7 @@ if choix_de_jeu == 1:
     add() #Afficher le nombre de points entre les jeux
     effacer() #Effacer ce qui est dans le terminal pour le jeu
 elif choix_de_jeu == 2:
-    trivia()
+    jouer_trivia()
     reponsefinale()
     banque()
     game_over()
