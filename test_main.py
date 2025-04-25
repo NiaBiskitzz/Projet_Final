@@ -4,6 +4,7 @@ from Core.Chargement.Debut_Jeu import DebutJeu #Lorsque l'espace est actonné le
 from Affichage.Effacer import effacer #Permet d'effacer le jeu précédent
 from Affichage.Erreur import game_over #Affichage du gagnant et perdant ainsi que les points gagnés entre les jeux
 from Affichage.point import add #Affiche le nombre de points entre les jeux
+from Maître_du_temps.Gregoire.countdown import countdown
 #from Taper import Taper  #Tape la taupe
 #from black_jack import black_jack #Black jack
 #from duel import duel #Duel
@@ -23,28 +24,40 @@ if choix_de_jeu == 1:
     Réponse_finale.reponsefinale(pointage_joueur1, pointage_joueur2)
     game_over(Réponse_finale.resultat_mini_jeux)
     add(Réponse_finale.point_joueur1, Réponse_finale.point_joueur2)
+    countdown()
+    effacer()
 elif choix_de_jeu == 2:
     print("trivia")
     Réponse_finale.reponsefinale(pointage_joueur1, pointage_joueur2)
     game_over(Réponse_finale.resultat_mini_jeux)
     add(Réponse_finale.point_joueur1, Réponse_finale.point_joueur2)
+    countdown()
+    effacer()
 elif choix_de_jeu == 3:
     print("Taper")
     Réponse_finale.reponsefinale(pointage_joueur1, pointage_joueur2)
     game_over(Réponse_finale.resultat_mini_jeux)
     add(Réponse_finale.point_joueur1, Réponse_finale.point_joueur2)
+    countdown()
+    effacer()
 elif choix_de_jeu == 4:
     print ("black_jack")
     Réponse_finale.reponsefinale(pointage_joueur1, pointage_joueur2)
     game_over(Réponse_finale.resultat_mini_jeux)
     add(Réponse_finale.point_joueur1, Réponse_finale.point_joueur2)
+    countdown()
+    effacer()
 elif choix_de_jeu == 5:
     print("duel")
     Réponse_finale.reponsefinale(pointage_joueur1, pointage_joueur2)
     game_over(Réponse_finale.resultat_mini_jeux)
     add(Réponse_finale.point_joueur1, Réponse_finale.point_joueur2)
+    countdown()
+    effacer()
 else:
     print("roulette")
     Réponse_finale.reponsefinale(pointage_joueur1, pointage_joueur2) 
     game_over(Réponse_finale.resultat_mini_jeux)
     add(Réponse_finale.point_joueur1, Réponse_finale.point_joueur2)
+    countdown()
+    effacer()

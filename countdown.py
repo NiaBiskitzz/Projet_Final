@@ -1,9 +1,12 @@
-4545import time
+import time
 import datetime
  
 # Crée une fonction
-def countdown(h, m, s):
- 
+def countdown():
+    h = int(0)
+    m = int(0)
+    s = int(15)
+
     # Calcule le nombre total de secondes
     total_seconds = h * 3600 + m * 60 + s
  
@@ -13,22 +16,9 @@ def countdown(h, m, s):
  
         # Timer represente le temps restant
         timer = datetime.timedelta(seconds = total_seconds)
-        
-        # affiche le temps restant
-        print(timer, end="\r")
  
         # pause de une seconde
         time.sleep(1)
  
         # Reduit le temps d'une seconde tans que la boucle roule
         total_seconds -= 1
- 
-    print("Bzzzt! The countdown is at zero seconds!")
- 
-# Entré utilisateur pour les heures, minutes et secondes
-h = input("Enter the time in hours: ")
-m = input("Enter the time in minutes: ")
-s = input("Enter the time in seconds: ")
-countdown(int(h), int(m), int(s))
-
-#quand temps = 0 termine le jeu
