@@ -1,3 +1,6 @@
+### This is pretty trash too###
+
+
 """
 Le jeu black jack utilise 52 cartes de poker(excluant les jokers). 
 Chaque carte a une valeur entre 1 et 11. 
