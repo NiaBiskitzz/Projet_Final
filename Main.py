@@ -5,10 +5,10 @@ from Affichage.Effacer import effacer #Permet d'effacer le jeu précédent
 from Affichage.Erreur import game_over #Affichage du gagnant et perdant ainsi que les points gagnés entre les jeux
 from Affichage.point import add #Affiche le nombre de points entre les jeux
 from Maître_du_temps.Gregoire.countdown import countdown
-from Battle_canoe import battle_canoe #Battleship
+from Affichage.Battle_canoe import battle_canoe #Battleship
 from trivia_game import jouer_trivia #Quiz
 from Taper import Taper  #Tape la taupe
-from blackjackV4 import black_jack #Black jack
+from blackjack.blackjackV4 import black_jack #Black jack
 from duel import duel #Duel
 from RouletteCasino import roulette() #Roulette
  
