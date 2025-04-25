@@ -3,13 +3,14 @@
 
 def calculate_hand_total(hand):
     """Calculates the total value of a player's hand while considering the Ace's flexible value."""
-    total = sum(card["value"] for card in hand) # Sum the values of the cards in hand
-    num_aces = sum(1 for card in hand if card["rank"] == "A")   # Count the number of Aces in hand
+    total = sum(card[2] for card in hand) # Sum the values of the cards in hand
+    num_aces = sum(1 for card in hand if card[0] == "Ace")   # Count the number of Aces in hand
 
     # Adjust for Aces if total exceeds 21
-    while total > 21 and num_aces:
+    while total > 21 and num_aces > 0:
+        # Convert an Ace from 11 to 1   
         total -= 10  # Convert an Ace from 11 to 1
-        num_aces -= 1
+        num_aces -= 1   # Decrease the count of Aces
     
     return total
 
