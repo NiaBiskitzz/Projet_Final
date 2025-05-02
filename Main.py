@@ -10,7 +10,7 @@ from trivia_game import jouer_trivia #Quiz
 from Taper import Taper  #Tape la taupe
 from blackjack.blackjackV4 import black_jack #Black jack
 from duel import duel #Duel
-from RouletteCasino import roulette() #Roulette
+from RouletteCasino import roulette #Roulette
  
 
 pointage_joueur1 = int(0)
@@ -30,7 +30,7 @@ while (Réponse_finale.point_joueur1 + Réponse_finale.point_joueur2) != 6:
         countdown() #Attendre 15 secondes pour voir l'affichage des points
         effacer() #Effacer l'affichage des points du jeu
     elif choix_de_jeu == 2:
-        trivia_game()
+        jouer_trivia()
         Réponse_finale.reponsefinale(pointage_joueur1, pointage_joueur2)
         game_over(Réponse_finale.resultat_mini_jeux)
         add(Réponse_finale.point_joueur1, Réponse_finale.point_joueur2)
