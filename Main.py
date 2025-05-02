@@ -9,7 +9,6 @@ from Affichage.Battle_canoe import battle_canoe #Battleship
 from trivia_game import jouer_trivia #Quiz
 from Taper import Taper  #Tape la taupe
 from blackjack.blackjackV4 import black_jack #Black jack
-from duel import duel #Duel
 from RouletteCasino import roulette #Roulette
  
 
@@ -29,6 +28,8 @@ while (Réponse_finale.point_joueur1 + Réponse_finale.point_joueur2) != 6:
         add(Réponse_finale.point_joueur1, Réponse_finale.point_joueur2) #Afficher le nombre de points
         countdown() #Attendre 15 secondes pour voir l'affichage des points
         effacer() #Effacer l'affichage des points du jeu
+        Réponse_finale.point_joueur1 = int(0) #Remettre les points à 0
+        Réponse_finale.point_joueur2 = int(0)
     elif choix_de_jeu == 2:
         jouer_trivia()
         Réponse_finale.reponsefinale(pointage_joueur1, pointage_joueur2)
@@ -36,6 +37,8 @@ while (Réponse_finale.point_joueur1 + Réponse_finale.point_joueur2) != 6:
         add(Réponse_finale.point_joueur1, Réponse_finale.point_joueur2)
         countdown()
         effacer()
+        Réponse_finale.point_joueur1 = int(0)
+        Réponse_finale.point_joueur2 = int(0)
     elif choix_de_jeu == 3:
         Taper()
         Réponse_finale.reponsefinale(pointage_joueur1, pointage_joueur2)
@@ -43,6 +46,8 @@ while (Réponse_finale.point_joueur1 + Réponse_finale.point_joueur2) != 6:
         add(Réponse_finale.point_joueur1, Réponse_finale.point_joueur2)
         countdown()
         effacer()
+        Réponse_finale.point_joueur1 = int(0)
+        Réponse_finale.point_joueur2 = int(0)
     elif choix_de_jeu == 4:
         black_jack()
         Réponse_finale.reponsefinale(pointage_joueur1, pointage_joueur2)
@@ -50,13 +55,15 @@ while (Réponse_finale.point_joueur1 + Réponse_finale.point_joueur2) != 6:
         add(Réponse_finale.point_joueur1, Réponse_finale.point_joueur2)
         countdown()
         effacer()
+        Réponse_finale.point_joueur1 = int(0)
+        Réponse_finale.point_joueur2 = int(0)
     elif choix_de_jeu == 5:
-        duel()
-        Réponse_finale.reponsefinale(pointage_joueur1, pointage_joueur2)
-        game_over(Réponse_finale.resultat_mini_jeux)
+        print("duel") #Le code du jeu n'a pas réussi à fonctionner à temps
         add(Réponse_finale.point_joueur1, Réponse_finale.point_joueur2)
         countdown()
         effacer()
+        Réponse_finale.point_joueur1 = int(0)
+        Réponse_finale.point_joueur2 = int(0)
     else:
         roulette()
         Réponse_finale.reponsefinale(pointage_joueur1, pointage_joueur2) 
@@ -64,6 +71,8 @@ while (Réponse_finale.point_joueur1 + Réponse_finale.point_joueur2) != 6:
         add(Réponse_finale.point_joueur1, Réponse_finale.point_joueur2)
         countdown()
         effacer()
+        Réponse_finale.point_joueur1 = int(0)
+        Réponse_finale.point_joueur2 = int(0)
 else: #Lorsque tous les jeux ont été joués
     print("fin") 
     

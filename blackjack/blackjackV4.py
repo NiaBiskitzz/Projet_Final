@@ -5,10 +5,13 @@ import poker
 import HandTotal
 import Dealer
 import Player_turn
+from Core.Pointage import Réponse_finale #Importer pour les pointages
 
 
 
 def black_jack():
+    #Importer les pointages
+    pointage_joueur1, pointage_joueur2 = Réponse_finale.reponsefinale()
 
     # Create a deck of cards
     deck = poker.create_blackjack_deck()
@@ -63,10 +66,20 @@ def black_jack():
     if Player1_standing and Player2_standing:
         if Player1_total > Player2_total:
             print("Player 1 gagne!")  # Player 1 wins
+            #Pointages des joueurs
+            pointage_joueur1 = 1
+            pointage_joueur2 = 0 
         elif Player2_total > Player1_total:
             print("Player 2 gagne!")  # Player 2 wins
+            #Pointages des joueurs
+            pointage_joueur1 = 0
+            pointage_joueur2 = 1
         else:
             print("Égalité!!!")  # Tie game
+            #Pointages des joueurs
+            pointage_joueur1 = 0
+            pointage_joueur2 = 0
+    return pointage_joueur1, pointage_joueur2
 
 
 
